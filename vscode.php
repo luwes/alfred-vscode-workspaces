@@ -2,16 +2,16 @@
 
 // Main configuration
 $inQuery = $argv[1] ?: '';
-$reRowQuery = '/' . implode('.*?', str_split(preg_quote($inQuery))) . '.*\.sublime-project$/i';
+$reRowQuery = '/' . implode('.*?', str_split(preg_quote($inQuery))) . '.*\.code-workspace$/i';
 $results = array();
-$cache = "/tmp/alfred2-sublimeprojects.tmp";
+$cache = "/tmp/alfred-vscode-workspace.tmp";
 $ttl = 10;
 $paths = (file_exists($cache) && time()-filemtime($cache) < $ttl) ? json_decode(file_get_contents($cache)) : array();
 
 
 if (!count($paths))
 {
-	exec('mdfind "kMDItemFSName=*.sublime-project" | grep -v node_modules', $paths);
+	exec('mdfind "kMDItemFSName=*.code-workspace" | grep -v node_modules', $paths);
 	file_put_contents($cache, json_encode($paths));
 }
 

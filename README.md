@@ -1,28 +1,31 @@
-Sublime Projects for Alfred 2
+Visual Studio Workspaces for Alfred
 ============
 
-A simple but useful Alfred 2 workflow with Sublime Projects support.
+A simple but useful Alfred workflow with VS Code Workspaces support.
 
 
 Requirements
 ----------------
-You have to install the `subl` command line tool.
-
-- Instructions for [Sublime Text 3](http://www.sublimetext.com/docs/3/osx_command_line.html)
-- Instructions for [Sublime Text 2](http://www.sublimetext.com/docs/2/osx_command_line.html)
+You have to install the `code` command line tool from VS Code.
 
 
 Installation
 ----------------
 
-- Download "Sublime Text Projects.alfredworkflow" extension by clicking the "raw" link.
+- Download "VS Code Workspaces.alfredworkflow" extension by clicking the "raw" link.
 - Double click the *.alfredextension file to install.
 
 
 Instructions
 ----------------
 
-sub `<Project name>`
+code `<Project name>`
+
+
+Credits
+----------------
+
+Thanks to [bigluck/alfred2-sublimeprojects](https://github.com/bigluck/alfred2-sublimeprojects) for most of the code and copy!
 
 
 Fuzzy-ish type maching
