@@ -3,6 +3,8 @@ Visual Studio Workspaces for Alfred
 
 A simple but useful Alfred workflow with VS Code Workspaces support.
 
+![Visual Studio Workspaces for Alfred](https://repository-images.githubusercontent.com/115214026/adbf5a80-226d-11ea-9535-6b87689cf996)
+
 
 Requirements
 ----------------
